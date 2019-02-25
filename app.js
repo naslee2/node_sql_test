@@ -4,13 +4,13 @@ const host = "localhost";
 const user = "root";
 const password = "root";
 
-var con = mysql.createConnection({
+var sql_connect = mysql.createConnection({
   host: host,
   user: user,
   password: password
 });
 
-con.connect(function(err) {
+sql_connect.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
 });
